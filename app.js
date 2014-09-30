@@ -8,10 +8,10 @@ angular.module('incidents', ['restangular', 'ngRoute']).
       otherwise({redirectTo:'/'});
 
       // Set base url
-      RestangularProvider.setBaseUrl('https://<orgName>.pagerduty.com/api/v1');
+      RestangularProvider.setBaseUrl('https://webdemo.pagerduty.com/api/v1');
 
       // auth details
-      RestangularProvider.setDefaultHeaders({Authorization: 'Token token=<Token>'});
+      RestangularProvider.setDefaultHeaders({Authorization: 'Token token=tpbFZsFxSyNVotHGojqh'});
 
       // Date extractor
       RestangularProvider.setResponseExtractor(function(response, operation) {
